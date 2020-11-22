@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
-import {Container} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import './App.css';
 
 class App extends React.Component {
@@ -40,8 +40,8 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container>
-          Hello from container!
+        <Container fluid={true}>
+          <p>Hello from container!</p>
         </Container>
       </Router>
     );
