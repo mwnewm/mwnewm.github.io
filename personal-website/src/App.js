@@ -4,7 +4,8 @@ import {
   Switch,
   Route,
   Link
-} from "react-router-dom";
+} from 'react-router-dom';
+import {Container} from 'react-bootstrap';
 import './App.css';
 
 class App extends React.Component {
@@ -38,7 +39,11 @@ class App extends React.Component {
   
   render() {
     return (
-      <Router></Router>
+      <Router>
+        <Container>
+          Hello from container!
+        </Container>
+      </Router>
     );
   }
 }
