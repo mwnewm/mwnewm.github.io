@@ -2,17 +2,16 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import './App.css';
+import { NavigationBar } from './components/NavigationBar';
 
-import HomePage from './pages/Home';
-import AboutPage from './pages/About';
 
+import {HomePage} from './HomePage';
+import {Resume} from './Resume';
+import {NoMatch} from './NoMatch';
 
 class App extends React.Component {
   
@@ -31,34 +30,24 @@ class App extends React.Component {
       },
       about: {
         title: 'About Me',
-      },
-      resume: {
-        title: 'Resume',
       }
     }
   }
   
   render() {
     return (
-      <Router>
-        <Container fluid={true} >
-          <Navbar className='border-bottom' bg='transparent' expand='lg'>
-            <Navbar.Brand>Maeve Newman</Navbar.Brand>
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
-            <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto">
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/about">About</Link>
-                <Link className="nav-link" to="/resume">Resume</Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-
-          <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subtitle}/>}></Route>
-          <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} />}></Route>
-
-          </Container>
-      </Router>
+      <React.Fragment>
+        <Container fluid>
+          <Router>
+          <NavigationBar />
+              <Switch>
+                <Route exact path='/' component={HomePage}></Route>
+                <Route exact path='/resume' component={Resume}></Route>
+                <Route component={NoMatch}></Route>
+              </Switch>
+          </Router>
+        </Container>
+      </React.Fragment>
     );
   }
 }
