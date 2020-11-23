@@ -1,7 +1,4 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Container, Image, Col, Row } from 'react-bootstrap';
-import heroImage from '../assets/img-home.jpg';
-import headshot from '../assets/headshot.jpg';
 import styled from 'styled-components';
 import {DownloadButton} from './DownloadButton';
 
