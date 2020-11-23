@@ -15,7 +15,7 @@ const Styles = styled.div`
     }
     .overlay-text {
         color: #ffffff;
-        padding: 75px;
+        padding: 100px;
     }
 `
 
@@ -23,11 +23,11 @@ export const Hero = () => (
     <Styles>
     <div className='hero-container'>
         <div className='overlay-text'>
-            <h1>This page is under construction!</h1>
+            <h2>This page is under construction!</h2>
         </div>
         <div className='overlay-text'> 
         <h4>In the meantime...</h4>
-            <DownloadButton>
+            <DownloadButton variant="secondary">
                 Download my resume!
             </DownloadButton>
         </div>
