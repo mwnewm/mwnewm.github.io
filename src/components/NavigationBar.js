@@ -16,16 +16,16 @@ const Styles = styled.div`
   }
 `;
 
-export const NavigationBar = (props) => (
-    <Styles>
-        <Navbar className='border-bottom' expand='lg'>
-              <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-              <Navbar.Collapse id="navbar-toggle">
-                <Nav className="ml-auto">
-                  <Link className="nav-link" to="/">Home</Link>
-                  <Link className="nav-link" to="/resume">Resume</Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Navbar>
-    </Styles>
+export const NavigationBar = () => (
+  <Styles>
+    <Navbar className='border-bottom' expand='lg'>
+      <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
+      <Navbar.Collapse id="navbar-toggle">
+        <Nav className="ml-auto">
+          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link" to="/resume">Resume</Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  </Styles>
 )
