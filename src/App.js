@@ -11,7 +11,7 @@ import { NavigationBar } from './components/NavigationBar';
 
 import {HomePage} from './pages/HomePage';
 import {UnderConstruction} from './pages/UnderConstruction';
-import {Resume} from './pages/Resume';
+import pdf from './assets/MaeveNewmanResume.pdf';
 import {NoMatch} from './pages/NoMatch';
 
 class App extends React.Component {
@@ -42,8 +42,8 @@ class App extends React.Component {
           <Router>
           <NavigationBar />
               <Switch>
+                <Route exact path='/resume' render={() => <body onLoad={window.open(pdf, '_self')}/>}></Route>
                 <Route exact path='/' component={UnderConstruction}></Route>
-                <Route exact path='/resume' component={Resume}></Route>
                 <Route component={NoMatch}></Route>
               </Switch>
           </Router>
