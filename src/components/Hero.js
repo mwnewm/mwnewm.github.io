@@ -17,7 +17,7 @@ const Styles = styled.div`
         z-index: -2;
     }
     .overlay-text {
-        color: #00000;
+        color: #ffffff;
         opacity: 0.9;
         font-family: 'Montserrat', sans-serif;
         font-size: 70px;

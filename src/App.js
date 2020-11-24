@@ -42,7 +42,7 @@ class App extends React.Component {
           <NavigationBar />
               <Switch>
                 <Route exact path='/resume' render={() => <body onLoad={window.open(pdf, '_self')}/>}></Route>
-                <Route exact path='/' component={HomePage}></Route>
+                <Route exact path='/' component={UnderConstruction}></Route>
                 <Route component={NoMatch}></Route>
               </Switch>
           </Router>
