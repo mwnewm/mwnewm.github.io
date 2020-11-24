@@ -9,9 +9,10 @@ import './App.css';
 import { NavigationBar } from './components/NavigationBar';
 
 
-import {HomePage} from './HomePage';
-import {Resume} from './Resume';
-import {NoMatch} from './NoMatch';
+import {HomePage} from './pages/HomePage';
+import {UnderConstruction} from './pages/UnderConstruction';
+import {Resume} from './pages/Resume';
+import {NoMatch} from './pages/NoMatch';
 
 class App extends React.Component {
   
@@ -41,7 +42,7 @@ class App extends React.Component {
           <Router>
           <NavigationBar />
               <Switch>
-                <Route exact path='/' component={HomePage}></Route>
+                <Route exact path='/' component={UnderConstruction}></Route>
                 <Route exact path='/resume' component={Resume}></Route>
                 <Route component={NoMatch}></Route>
               </Switch>
