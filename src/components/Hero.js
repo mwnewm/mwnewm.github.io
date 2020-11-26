@@ -17,11 +17,12 @@ const Styles = styled.div`
         z-index: -2;
     }
     .overlay-text {
-        color: #00000;
-        opacity: 0.9;
+        color: #ffffff;
+        opacity: 0.7;
         font-family: 'Montserrat', sans-serif;
-        font-size: 70px;
-        letter-spacing: 10px;
+        font-size: 8vw;
+        font-weight: bold;
+        letter-spacing: 30px;
     }
 `
 
