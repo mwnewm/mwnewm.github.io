@@ -40,6 +40,7 @@ class App extends React.Component {
           <Router>
             <NavigationBar />
               <Switch>
+<<<<<<< HEAD
                  {/*<Route exact path='/linkedin' component={() => { 
                   window.location.href = 'https://www.linkedin.com/in/maevewnewman/'; 
                   return null; 
@@ -53,6 +54,10 @@ class App extends React.Component {
                   return null; 
                 }}/> */}
                 <Route exact path='/' component={HomePage}></Route> 
+=======
+                <Route exact path='/resume' render={() => <body onLoad={window.open(pdf, '_self')}/>}></Route>
+                <Route exact path='/' component={UnderConstruction}></Route>
+>>>>>>> master
                 <Route component={NoMatch}></Route>
               </Switch>
           </Router>

@@ -20,7 +20,11 @@ const Styles = styled.div`
     }
     .overlay-text {
         color: #ffffff;
+<<<<<<< HEAD
         opacity: 0.8;
+=======
+        opacity: 0.9;
+>>>>>>> master
         font-family: 'Montserrat', sans-serif;
         font-size: 8vw;
         font-weight: 900;
