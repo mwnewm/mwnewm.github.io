@@ -30,7 +30,7 @@ export const NavigationBar = () => (
     <Navbar className='border-bottom' expand='lg'>
       <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
       <Navbar.Collapse id="navbar-toggle">
-        <Nav className='p-2'>
+        <Nav className='mr-auto'>
           <Link className='nav-link' to={{ pathname: "https://www.linkedin.com/in/maevewnewman/" }} target="_blank">LinkedIn
             {/* <MDBIcon fab icon="linkedin" size="2x" className='nav-icon' /> */}
           </Link>
@@ -45,6 +45,7 @@ export const NavigationBar = () => (
           <a className="nav-link" href={pdf}>Resume</a>
         </Nav>
       </Navbar.Collapse>
+      
     </Navbar>
   </Styles>
 )

@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import backgroundImage from '../assets/background.jpeg';
 
 const Styles = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
     .hero-container{
-        background-image: url("https://cdn.pixabay.com/photo/2019/11/09/17/36/fjord-4614096_1280.jpg");
+        background-image: url(${backgroundImage});
+        background-position: center bottom;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 400px;
+        height: 300px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -18,10 +20,10 @@ const Styles = styled.div`
     }
     .overlay-text {
         color: #ffffff;
-        opacity: 0.7;
+        opacity: 0.8;
         font-family: 'Montserrat', sans-serif;
         font-size: 8vw;
-        font-weight: bold;
+        font-weight: 900;
         letter-spacing: 30px;
     }
 `
