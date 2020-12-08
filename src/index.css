@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+p {
+  text-align: justify;
+  margin: 0px 15px;
+}
+
 .center {
   height: 100%;
   display: flex;
@@ -26,10 +31,8 @@ code {
 }
 
 .profile-img {
+  float: left;
   height: 250px;
   padding: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;    
 }
