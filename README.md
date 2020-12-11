@@ -1,3 +1,3 @@
-This is my personal website, made using React and React-Bootstrap.
+This is my personal website, made using React.
 
-Currently under construction!
+The page is still under construction, but feel free to visit the most recent draft at: https://maevenewman.live/

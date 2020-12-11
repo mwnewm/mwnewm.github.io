@@ -7,14 +7,13 @@ import styled from 'styled-components';
 
 const Styles = styled.div`   
 p {
+    margin-top: 1em;
     text-indent: 3em;
 }
 .intro-text {
-    margin-top: 25px;
     padding: 1em;
 }
 `
-
 export const HomePage = () => (
     <Styles>
         <Hero text="Welcome" />

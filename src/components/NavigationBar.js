@@ -34,15 +34,12 @@ export const NavigationBar = () => (
           <Link className='nav-link' to={{ pathname: "https://www.linkedin.com/in/maevewnewman/" }} target="_blank">LinkedIn
             {/* <MDBIcon fab icon="linkedin" size="2x" className='nav-icon' /> */}
           </Link>
-          <Link className='nav-link' to={{ pathname: "https://twitter.com/MaeveNewmdev/" }} target="_blank">Twitter
-            {/* <MDBIcon fab icon="twitter-square" size="2x" className='nav-icon' /> */}
-          </Link>
           <Link className='nav-link' to={{pathname: "https://github.com/mwnewm/"}} target="_blank">Github
             {/* <MDBIcon fab icon="github-square" size="2x" className='nav-icon' /> */}
           </Link>
         </Nav>
         <Nav className="ml-auto">
-          <a className="nav-link" href={pdf}>Resume</a>
+          <a className="nav-link" href={pdf}>Download Resume</a>
         </Nav>
       </Navbar.Collapse>
       

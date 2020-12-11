@@ -11,6 +11,7 @@ import { NavigationBar } from './components/NavigationBar';
 import {HomePage} from './pages/HomePage';
 import {UnderConstruction} from './pages/UnderConstruction';
 import {NoMatch} from './pages/NoMatch';
+import ReactGA from 'react-ga';
 
 class App extends React.Component {
   
@@ -30,7 +31,10 @@ class App extends React.Component {
       about: {
         title: 'About Me',
       }
-    }
+    } 
+  ReactGA.initialize('G-KEZNNFLTJZ');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   }
   
   render() {
