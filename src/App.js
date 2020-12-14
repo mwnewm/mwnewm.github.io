@@ -31,9 +31,7 @@ class App extends React.Component {
       about: {
         title: 'About Me',
       }
-    } 
-  ReactGA.initialize('G-KEZNNFLTJZ');
-  ReactGA.pageview(window.location.pathname + window.location.search);
+    }
 
   }
   
